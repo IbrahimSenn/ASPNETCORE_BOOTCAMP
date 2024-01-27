@@ -21,7 +21,9 @@ namespace Basics.Controllers{
        var kurslar = new List<Bootcamp>(){
            new Bootcamp(){Id=1, Title="Asp Net Core Eğitimi", Description="23 Ocak'da başlıyor..", Image="1jpg"},
            new Bootcamp(){Id=2, Title="SQL Eğitimi", Description="27 Ocak'da başlıyor..", Image="2.jpg"},
+           new Bootcamp(){Id=2, Title="Oracle Eğitimi", Description="2 Şubat'da başlıyor..", Image ="3.jpg"},
            new Bootcamp(){Id=2, Title="Oracle Eğitimi", Description="2 Şubat'da başlıyor..", Image ="3.jpg"}
+        
            
            };
        return View(kurslar);
