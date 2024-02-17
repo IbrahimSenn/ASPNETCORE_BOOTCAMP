@@ -1,37 +1,8 @@
-@model List<Bootcamp>;
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
-</head>
-<body>
-
- 
-   <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-
-            <div class="container"> @* kenar uzunluklarını ayarladığımız kısım genelde container olur. *@
-                <a href="#" class="navbar-brand" > Techcareer.net</a>
-                <ul class="navbar-nav me-auto" >
-                    <li class="nav-item" >
-                        <a href="#" class="nav-link"> Home </a>
-                         </li>
-                    <li class="nav-item" >
-                        <a href="#" class="nav-link"> Bootcamp </a>
-                         </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    @* hareketli kısmımız genelde main içindedir*@
-    <div class="container mt-4">
-        <main>
-
-          @foreach(var kurs in Model)
+@model List<Bootcamp>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Layout dosyanızın doğru yolunu belirtin
+}
+     @foreach(var kurs in Model)
             {
                 <div class="card mb-3" id="kurs_@kurs.Id">
                     <div class="row">
@@ -46,16 +17,5 @@
                             
                         </div>
                     </div>
-
-
                 </div>
-
-            
-        
-            }       
-        </main>
-    </div>
-
-
-</body>
-</html>
+            } 

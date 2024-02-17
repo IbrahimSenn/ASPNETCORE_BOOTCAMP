@@ -1,44 +1,6 @@
 @model Bootcamp;
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
-</head>
-    <body>      @* //Görünen yüzün tamamı burada yazılır *@
-
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-
-            <div class="container"> @* kenar uzunluklarını ayarladığımız kısım genelde container olur. *@
-                <a href="#" class="navbar-brand" > Techcareer.net</a>
-                <ul class="navbar-nav me-auto" >
-                    <li class="nav-item" >
-                        <a href="#" class="nav-link"> Home </a>
-                         </li>
-                    <li class="nav-item" >
-                        <a href="#" class="nav-link"> Bootcamp </a>
-                         </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    @* hareketli kısmımız genelde main içindedir*@
-
-    @* <div class="container pb-4">
-        <p>Kurs bilgisi : @Model.Id </p>
-        <p>Kurs Başlığı : @Model.Title </p>
-        <p>Kurs Açıklması : @Model.Description </p>
-    </div> *@
-    <div class="container mt-4">
-        <main>
-
-          
-                <div class="card mb-3" id="kurs_@Model.Id">
+ <div class="card mb-3" id="kurs_@Model.Id">
                     <div class="row">
                         <div class="col-md-4">
                              <img src="~/img/@Model.Image"  alt="" class="img-fluid rounded">
@@ -51,10 +13,3 @@
                             
                         </div>
                     </div>
-
-
-        </main>
-    </div>
-          
-</body>
-</html>
