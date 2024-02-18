@@ -6,14 +6,14 @@ namespace Basics.Controllers;
 
 public class HomeController : Controller
 {
-    public string Index()
+    public IActionResult Index()
     {
-        return "Home/Index";
+        return View(Repository.Bootcamps);
     }
 
-    public string Contact()
+    public IActionResult Contact()
     {
-        return "Home/Contact";
+        return View();
     }
 
  

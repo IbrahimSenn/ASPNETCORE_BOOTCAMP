@@ -1,21 +1,10 @@
-@model List<Bootcamp>
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml"; // Layout dosyanızın doğru yolunu belirtin
-}
+@model List<Bootcamp>;
+
+
      @foreach(var kurs in Model)
             {
-                <div class="card mb-3" id="kurs_@kurs.Id">
-                    <div class="row">
-                        <div class="col-md-4">
-                             <img src="~/img/@kurs.Image"  alt="" class="img-fluid rounded">
-                        </div>
-                        <div class="col-md-8 mt-4">
-                            
-                                <h5> @kurs.Title </h5>
-                                <p> @kurs.Description </p>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
+                if(kurs.isActive)
+                {
+                    @await Html.PartialAsync("_List",kurs);
+                }
             } 
