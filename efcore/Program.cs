@@ -1,7 +1,19 @@
+using efcore.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+ //Sqlite işlemleri burada program build edilmeden önce yazılır.
+builder.Services.AddDbContext<DataContext>(options =>{
+    var config = builder.Configuration ;
+    var connectionString = config.GetConnectionString("database");
+    
+    options.UseSqlite(connectionString);  
+});
+//Migration işlemi oluşturduğumuz datacontext içindeki verileri, veri tabanı kodu şeklinde oluşturup bir dosya içinde teslim eder.
 
 var app = builder.Build();
 

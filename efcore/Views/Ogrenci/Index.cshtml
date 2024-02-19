@@ -1,0 +1,30 @@
+@model IEnumerable<Ogrenci>
+
+    <h2>Öğrenci Ekle</h2>
+    <a asp-controller="Ogrenci" asp-action="Create" class="btn btn-primary">Ekle</a>
+        <hr>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Ogrenci ID</th>
+                <th>Ogrenci Adı</th>
+                <th>Ogrenci Soyadı</th>
+                <th style="width: 150px;">Ayarlar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var ogrenci in Model){
+            <tr>
+                <td>@ogrenci.OgrenciId</td>
+                <td>@ogrenci.OgrenciAd</td>
+                <td>@ogrenci.OgrenciSoyad</td>
+                <td>
+                    <a asp-controller="Ogrenci" asp-action="Edit" asp-route-id="@ogrenci.OgrenciId" class="btn btn-sm btn-primary">Edit</a>
+                    <a href=""class="btn btn-sm btn-danger">Delete</a>
+
+                </td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
