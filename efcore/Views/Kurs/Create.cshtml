@@ -1,0 +1,10 @@
+@* Önce controlleradında bir dosya oluşturulur ve içine action isminde dosyalar yazılır. *@
+@model Kurs
+
+<form asp-asp-controller="Ogrenci" asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Baslik" class="form-label"> Başlık Adı </label>
+        <input asp-for="Baslik" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary"> Kaydet </button>
+</form>
