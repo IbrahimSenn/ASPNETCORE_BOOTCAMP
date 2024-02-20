@@ -1,0 +1,16 @@
+@* Önce controlleradında bir dosya oluşturulur ve içine action isminde dosyalar yazılır. *@
+@model Kurs
+
+<h2>Kurs Güncelleme</h2>
+<hr>
+
+<form asp-asp-controller="Kurs" asp-action="Edit" method="post">
+
+<input type="hidden" asp-for="KursId"> @* bunu unutursan  kaydetten sonra 404 hatası alırsın.*@
+   
+    <div class="mb-3">
+        <label asp-for="Baslik" class="form-label">Kurs Adı</label>
+        <input asp-for="Baslik" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary"> Kaydet </button>
+</form>

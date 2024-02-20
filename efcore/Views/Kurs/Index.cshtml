@@ -1,0 +1,28 @@
+@model IEnumerable<Kurs>
+
+    <h2>Kurs Ekle</h2>
+    <a asp-controller="Kurs" asp-action="Create" class="btn btn-primary">Ekle</a>
+        <hr>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Kurs Id</th>
+                <th>Başlık Adı</th>
+                <th style="width: 150px;">Ayarlar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var kurs in Model){
+            <tr>
+                <td>@kurs.KursId</td>
+                <td>@kurs.Baslik</td>
+                <td>
+                    <a asp-controller="Kurs" asp-action="Edit" asp-route-id="@kurs.KursId" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-controller="Kurs" asp-action="Delete" asp-route-id="@kurs.Baslik" class="btn btn-sm btn-danger">Delete</a>
+
+                </td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
