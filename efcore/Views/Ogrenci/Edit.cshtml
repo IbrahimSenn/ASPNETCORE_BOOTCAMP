@@ -2,6 +2,8 @@
 @model Ogrenci
 
 <form asp-asp-controller="Ogrenci" asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="OgrenciId"> @* bunu unutursan  kaydetten sonra 404 hatası alırsın.*@
     <div class="mb-3">
         <label asp-for="OgrenciAd" class="form-label"> Öğrenci Adı </label>
         <input asp-for="OgrenciAd" class="form-control">
