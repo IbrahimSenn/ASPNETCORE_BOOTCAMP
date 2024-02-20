@@ -73,6 +73,37 @@ namespace efcore.Controllers //Önce controller ve sonra view oluşturulur.
             }
             return View(model);
         }
+        public async Task<IActionResult> Delete(int? id){
+
+            if(id == null)
+            {
+                return NotFound();
+            }
+
+           
+            var kurs = await _context.Kurslar.FirstOrDefaultAsync(b => b.KursId == id); 
+            if(kurs == null)
+            {
+                return NotFound();
+            }
+
+
+            return View(kurs);
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> Delete([FromForm]int id){
+            var kurs = await _context.Kurslar.FindAsync(id);
+            if (kurs == null)
+            {
+                return NotFound();
+            }
+
+            _context.Kurslar.Remove(kurs);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
     
 
 
