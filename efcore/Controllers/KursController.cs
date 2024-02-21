@@ -103,10 +103,5 @@ namespace efcore.Controllers //Önce controller ve sonra view oluşturulur.
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-
-    
-
-
-
     }
 }
