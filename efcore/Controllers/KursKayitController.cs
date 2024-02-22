@@ -13,7 +13,10 @@ namespace efcore.Controllers
         }
 
         public IActionResult Index(){
-            return View();
+
+            var kursKayitlari = _context.KursKayitlari.ToListAsync();
+
+            return View(kursKayitlari);
 
         }
 
