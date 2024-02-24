@@ -60,3 +60,5 @@ C:\Users\ibrah\Desktop\ASPNETCORE_BOOTCAMP\BlogApp\obj\Debug\net7.0\refint\BlogA
 C:\Users\ibrah\Desktop\ASPNETCORE_BOOTCAMP\BlogApp\obj\Debug\net7.0\BlogApp.pdb
 C:\Users\ibrah\Desktop\ASPNETCORE_BOOTCAMP\BlogApp\obj\Debug\net7.0\BlogApp.genruntimeconfig.cache
 C:\Users\ibrah\Desktop\ASPNETCORE_BOOTCAMP\BlogApp\obj\Debug\net7.0\ref\BlogApp.dll
+C:\Users\ibrah\Desktop\ASPNETCORE_BOOTCAMP\BlogApp\obj\Debug\net7.0\BlogApp.RazorAssemblyInfo.cache
+C:\Users\ibrah\Desktop\ASPNETCORE_BOOTCAMP\BlogApp\obj\Debug\net7.0\BlogApp.RazorAssemblyInfo.cs
