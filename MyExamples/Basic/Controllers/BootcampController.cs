@@ -12,6 +12,7 @@ namespace Basix.Controllers
             var kurs = new Bootcamp();
             kurs.Id = 1;
             kurs.Name = "Asp.NetCore";
+            kurs.Image = "merso.png";
             kurs.Description = "23 Ocak'da başlıyor";
 
             return View(kurs);
@@ -20,8 +21,16 @@ namespace Basix.Controllers
 
             var kurslar = new List<Bootcamp>(){
                 new Bootcamp(){ Id=1, Name="Gündem", Description="23 Şubatta kaza oranı değişti.", Image ="asya-borsa.jpg" },
-                new Bootcamp(){ Id=2, Name="Sağlık", Description="Doktorlar yeni bir hastalık tespit etti.",Image ="merso.png" },
+                new Bootcamp(){ Id=2, Name="Sağlık", Description="Doktorlar bir hastalık tespit etti.",Image ="merso.png" },
                 new Bootcamp(){ Id=3, Name="Bilim", Description="Nasa'dan yeni hamleler.. ",Image ="petrol.jpg" },
+                
+                new Bootcamp(){ Id=4, Name="Sağlık", Description="Doktorlar bir hastalık tespit etti.",Image ="merso.png" },
+                new Bootcamp(){ Id=5, Name="Bilim", Description="Nasa'dan yeni hamleler.. ",Image ="petrol.jpg" },
+                new Bootcamp(){ Id=6, Name="Gündem", Description="23 Şubatta kaza oranı değişti.", Image ="asya-borsa.jpg" },
+                
+                new Bootcamp(){ Id=7, Name="Sağlık", Description="Doktorlar bir hastalık tespit etti.",Image ="merso.png" },
+                new Bootcamp(){ Id=8, Name="Gündem", Description="23 Şubatta kaza oranı değişti.", Image ="asya-borsa.jpg" },
+                new Bootcamp(){ Id=9, Name="Bilim", Description="Nasa'dan yeni hamleler.. ",Image ="petrol.jpg" }
             };
 
             return View(kurslar) ;

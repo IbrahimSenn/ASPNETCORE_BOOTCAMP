@@ -1,14 +1,12 @@
-﻿@model Bootcamp;
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>@Model.Id</p>
-    <p>@Model.Name</p>
-    <p>@Model.Description</p>
-</body>
-</html>
+﻿@model Bootcamp ;
+ 
+
+<div class="container pb-4" id = "kurs_@Model.Id">
+    <div class="card " style="width: 18rem;">
+        <img src="~/img/@Model.Image" class="img-fluit rounded" height="150px" alt="">
+        <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text">@Model.Description</p>
+        <a href="" href="#" class="btn btn-primary mb-4">Go somewhere near</a>
+    </div>
+</div>

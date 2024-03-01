@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ibrah\\Desktop\\ASP.NETMyExamples\\Basix\\Basix.csproj",
+      "projectUniqueName": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\MyExamples\\Basic\\Basix.csproj",
       "projectName": "Basix",
-      "projectPath": "C:\\Users\\ibrah\\Desktop\\ASP.NETMyExamples\\Basix\\Basix.csproj",
+      "projectPath": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\MyExamples\\Basic\\Basix.csproj",
       "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ibrah\\Desktop\\ASP.NETMyExamples\\Basix\\obj\\",
+      "outputPath": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\MyExamples\\Basic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ibrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
