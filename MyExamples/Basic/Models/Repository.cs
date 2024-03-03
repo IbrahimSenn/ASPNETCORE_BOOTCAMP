@@ -18,7 +18,7 @@ namespace Basic.Models
                 
                 new Bootcamp(){ Id=7, Name="Sağlık", Description="Doktorlar bir hastalık tespit etti.",Image ="merso.png" ,IsActive= false},
                 new Bootcamp(){ Id=8, Name="Gündem", Description="23 Şubatta kaza oranı değişti.", Image ="asya-borsa.jpg" ,IsActive= false },
-                new Bootcamp(){ Id=9, Name="Bilim", Description="Nasa'dan yeni hamleler.. ",Image ="petrol.jpg" ,IsActive= false},
+                new Bootcamp(){ Id=9, Name="Bilim", Description="Nasa'dan yeni hamleler.. ",Image ="petrol.jpg" ,IsActive= true},
 
                 };
             }

@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Basix.Models;
+using Basic.Models;
 
 namespace Basix.Controllers;
 
@@ -15,7 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        return View(Repository.Bootcamps);
     }
 
     public IActionResult Contact()
