@@ -2,6 +2,9 @@
         <div class="row">
                 @foreach(var kurs in @Model){
 
-                        @await Html.PartialAsync("_List", kurs);
+                        @if(kurs.IsActive){
+                               @await Html.PartialAsync("_List", kurs);
+                        }
+                        
                 }
         </div>
