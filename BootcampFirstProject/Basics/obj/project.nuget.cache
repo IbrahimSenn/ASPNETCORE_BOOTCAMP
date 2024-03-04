@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bPjwPEYUJE/coR/IBurJ3tZuYDpr39QsK6ge0wmjwBKZxbAGTOZhkuix8ckHJzqzn9VynfjhPpIWVN6TqxZx5A==",
+  "dgSpecHash": "c7mGauMnTKfBCC2ntCOA8vZ8wjfrUrDGgeB23eToz3emzUJ1aOM1+ohmHVSNS1kCR2JDXgDwQY2cFvtiTB7RCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\Basics\\Basics.csproj",
+  "projectFilePath": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\BootcampFirstProject\\Basics\\Basics.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

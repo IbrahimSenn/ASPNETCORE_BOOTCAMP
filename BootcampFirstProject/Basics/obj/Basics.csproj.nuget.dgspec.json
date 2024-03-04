@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\Basics\\Basics.csproj": {}
+    "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\BootcampFirstProject\\Basics\\Basics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\Basics\\Basics.csproj": {
+    "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\BootcampFirstProject\\Basics\\Basics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\Basics\\Basics.csproj",
+        "projectUniqueName": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\BootcampFirstProject\\Basics\\Basics.csproj",
         "projectName": "Basics",
-        "projectPath": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\Basics\\Basics.csproj",
+        "projectPath": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\BootcampFirstProject\\Basics\\Basics.csproj",
         "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\Basics\\obj\\",
+        "outputPath": "C:\\Users\\ibrah\\Desktop\\ASPNETCORE_BOOTCAMP\\BootcampFirstProject\\Basics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ibrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
