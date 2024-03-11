@@ -1,9 +1,13 @@
 @model Ogrenci
 
-<h2>Öğrenci Ekleme</h2>
+<h2>Öğrenci Güncelleme</h2>
 <hr>
 
-<form asp asp-controller="Ogrenci" asp-action="Create" method="post">
+<form asp-asp-controller="Ogrenci" asp-action="Edit" method="post">
+
+   <input type="hidden" asp-for="OgrenciId">  @* Edit sayfanının gelmesi için gerekli olan id bilgisini buradan çektik. *@
+
+
     <div class="mb-3">
         <label asp-for="OgrenciAd" class="form-label">Öğrenci Ad</label>
         <input asp-for="OgrenciAd" class="form-control">

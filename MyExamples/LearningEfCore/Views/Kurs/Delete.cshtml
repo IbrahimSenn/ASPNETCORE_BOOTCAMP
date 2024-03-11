@@ -1,0 +1,17 @@
+@model Kurs
+
+<h2>Kurs Silme</h2>
+<hr>
+<p>
+    <b>@Model.KursAdi isimli kursu silmek istiyor musun?</b>
+
+
+<form asp-asp-controller="Ogrenci" asp-action="Delete" method="post">
+
+   <input type="hidden"  value="@Model.KursId" name="id" > @* delete sayfanının gelmesi için gerekli olan id bilgisini buradan çektik. Farklı bir çekme yöntemi kullanıldı. *@
+   <button type="submit" class="btn btn-danger"> Evet </button>
+   <button asp-action="Index" class="btn btn-primary"> Hayır </button>
+
+
+</form>
+</p>
