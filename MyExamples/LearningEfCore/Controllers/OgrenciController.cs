@@ -1,3 +1,4 @@
+using System.IO.Compression;
 using System.Runtime.CompilerServices;
 using LearningEfCore.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +32,7 @@ namespace LearningEfCore.Controllers
             return RedirectToAction("Index"); //başka bir controller indexine gitmek istenirse ("Index","Home") şeklinde belirtilir.
         }
         
+        
         public async Task<IActionResult> Edit(int? id){
             
             if (id == null)
@@ -39,7 +41,10 @@ namespace LearningEfCore.Controllers
             }
 
             //var kisi = await _context.Ogrenciler.FindAsync(id);
-            var kisi = await _context.Ogrenciler.FirstOrDefaultAsync(b =>b.OgrenciId == id); //bu daha garanti bir yöntemdir.
+            var kisi = await _context.Ogrenciler
+            .Include(m => m.KursKayitlari)
+            .ThenInclude(m =>m.Kurs)
+            .FirstOrDefaultAsync(b => b.OgrenciId == id);   //bu daha garanti bir yöntemdir.
 
             if (kisi == null)
             {

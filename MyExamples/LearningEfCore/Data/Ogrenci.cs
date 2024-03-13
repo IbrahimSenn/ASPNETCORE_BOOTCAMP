@@ -1,3 +1,4 @@
+using System.Collections;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection.Metadata.Ecma335;
 
@@ -13,9 +14,13 @@ namespace LearningEfCore.Data
         public string AdSoyad {get{
             return this.OgrenciAd + " " + this.OgrenciSoyad ;
         }
-            
         }
         public string? Eposta { get; set; }
         public int? Telefon { get; set; }
-    }
+
+        public ICollection<KursKayit> KursKayitlari {get; set;} = new List<KursKayit>(); // Burada gözümden kaçan get-set bloğu hatasını bulmak saatlerimi aldı!!
+
+
+        
+                }
 }
