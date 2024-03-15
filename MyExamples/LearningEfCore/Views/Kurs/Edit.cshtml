@@ -3,7 +3,9 @@
 <h2>Kurs Güncelleme</h2>
 <hr>
 
-<form asp-asp-controller="Kurs" asp-action="Edit" method="post">
+<div class="row">
+    <div class="col-8">
+        <form asp-asp-controller="Kurs" asp-action="Edit" method="post">
 
    <input type="hidden" asp-for="KursId">  @* Edit sayfanının gelmesi için gerekli olan id bilgisini buradan çektik. *@
 
@@ -15,3 +17,17 @@
     
     <button type="submit" class="btn btn-primary"> Kaydet </button>
 </form>
+    </div>
+    <div class="col-4">
+
+        <h2> Kayıtlı öğrenciler </h2> 
+        <hr>
+        @foreach (var item in @Model.KursKayitlari){
+            <li>
+                @item.Ogrenci.OgrenciAd
+            </li>
+        }
+
+    </div>
+</div>
+

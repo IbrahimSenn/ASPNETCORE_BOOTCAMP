@@ -1,0 +1,39 @@
+@model IEnumerable<Ogretmen> 
+    @* verileri tek bir liste olarak değil de sürekli güncellenebilen bir döngü olarak çekebilmek için List<Ogrenci> yerine IEnumerable<Ogrenci> kullandık *@
+
+<h2> Öğretmen Ekle </h2>
+<a asp asp-controller="Ogretmen" asp-action="Create" class="btn btn-sm btn-primary">Ekle</a>
+<hr>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            @* <th> Öğrenci Id </th>
+            <th> Öğrenci Adı </th>
+            <th> Öğrenci Soyadı </th>
+            burada sütun başlıklarını kendimiz oluşturduk. İstersek veri tabanındaki sütun adları ile şu şekilde çekebiliriz:
+             *@
+            <th> @Html.DisplayNameFor(m => m.OgretmenId) </th>
+            <th> @Html.DisplayNameFor(m => m.OgretmenAd) </th>
+            <th> @Html.DisplayNameFor(m => m.OgretmenSoyad) </th>
+            <th style="width: 150px;"> Ayarlar </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr> 
+               
+                <td> @Html.DisplayFor(modelitem => item.OgretmenId ) </td>
+                <td> @Html.DisplayFor(modelitem => item.OgretmenAd ) </td>
+                <td> @Html.DisplayFor(modelitem => item.OgretmenSoyad ) </td>
+                @* DisplayNameFor() dbdeki sütunun isimlerini çekiyor.. DisplayFor() ise sütunun içindeki bilgileri*@
+                <td>
+                    <a asp asp-controller="Ogretmen" asp-action="Edit" asp-route-id="@item.OgretmenId" class="btn btn-sm btn-primary"> Detay </a>
+                    <a asp asp-controller="Ogretmen" asp-action="Delete" asp-route-id="@item.OgretmenId" class="btn btn-sm btn-danger"> Delete </a>
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>

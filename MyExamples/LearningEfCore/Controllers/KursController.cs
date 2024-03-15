@@ -41,7 +41,10 @@ namespace LearningEfCore.Controllers
             }
 
             //var kisi = await _context.Ogrenciler.FindAsync(id);
-            var ders = await _context.Kurslar.FirstOrDefaultAsync(b =>b.KursId == id); //bu daha garanti bir yöntemdir.
+            var ders = await _context.Kurslar
+            .Include(m=>m.KursKayitlari)
+            .ThenInclude(m=>m.Ogrenci)
+            .FirstOrDefaultAsync(b =>b.KursId == id); //bu daha garanti bir yöntemdir.
 
             if (ders == null)
             {
