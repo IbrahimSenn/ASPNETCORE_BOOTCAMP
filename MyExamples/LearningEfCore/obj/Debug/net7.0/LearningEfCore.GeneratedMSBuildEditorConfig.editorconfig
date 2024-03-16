@@ -68,6 +68,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ibrah/Desktop/ASPNETCORE_BOOTCAMP/MyExamples/LearningEfCore/Views/Ogretmen/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/Desktop/ASPNETCORE_BOOTCAMP/MyExamples/LearningEfCore/Views/Ogretmen/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ibrah/Desktop/ASPNETCORE_BOOTCAMP/MyExamples/LearningEfCore/Views/Ogretmen/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

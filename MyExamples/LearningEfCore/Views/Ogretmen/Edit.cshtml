@@ -1,9 +1,14 @@
 @model Ogretmen
 
-<h2>Öğretmen Ekleme</h2>
+<h2>Öğretmen Güncelleme</h2>
+
 <hr>
 
-<form asp asp-controller="Ogretmen" asp-action="Create" method="post">
+    <form asp-asp-controller="Ogretmen" asp-action="Edit" method="post">
+
+   <input type="hidden" asp-for="OgretmenId">  @* Edit sayfanının gelmesi için gerekli olan id bilgisini buradan çektik. *@
+
+
     <div class="mb-3">
         <label asp-for="OgretmenAd" class="form-label">Öğretmen Ad</label>
         <input asp-for="OgretmenAd" class="form-control">
@@ -21,8 +26,15 @@
         <input asp-for="Telefon" class="form-control">
     </div>
     <div class="mb-3">
-        <label asp-for="BaslamaTarihi" class="form-label">Öğretmen Başalama Tarihi</label>
+        <label asp-for="BaslamaTarihi" class="form-label">Öğretmen Başlama Tarihi</label>
         <input asp-for="BaslamaTarihi" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary"> Kaydet </button>
-</form>
+    </form>
+    </div>
+   
+        
+        
+
+
+

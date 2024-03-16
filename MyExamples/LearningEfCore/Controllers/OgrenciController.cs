@@ -93,7 +93,7 @@ namespace LearningEfCore.Controllers
                 return NotFound();
             }
 
-            //var kisi = await _context.Ogrenciler.FindAsync(id);
+            
             var kisi = await _context.Ogrenciler.FindAsync(id); //bu daha garanti bir yöntemdir.
 
             if (kisi == null)
